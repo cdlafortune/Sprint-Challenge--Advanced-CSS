@@ -10,6 +10,11 @@
     border-bottom: 1px solid @nav-border;
     margin-bottom: 2%;
 
+    //STRETCH GOALS
+    position: fixed;
+    top: 0;
+    opacity: 0.75;
+
     .nav-text {
         width: 100%;
         flex-wrap: nowrap;
@@ -44,6 +49,10 @@
             font-size: 1.75rem;
             padding: 2% 5%;
             color: black;
+
+            &:hover {
+                color: @river-bend;
+            }
 
             @media @phone {
                 // border: 1px solid red;

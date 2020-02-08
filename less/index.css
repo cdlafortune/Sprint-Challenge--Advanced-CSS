@@ -170,6 +170,9 @@ p {
   background-color: #F6F6F6;
   border-bottom: 1px solid #F1F1F1;
   margin-bottom: 2%;
+  position: fixed;
+  top: 0;
+  opacity: 0.75;
 }
 .navbar .nav-text {
   width: 100%;
@@ -208,6 +211,9 @@ p {
   padding: 2% 5%;
   color: black;
 }
+.navbar nav a:hover {
+  color: #454A59;
+}
 @media only screen and (max-width: 500px) {
   .navbar nav a {
     flex-direction: row;
@@ -228,12 +234,16 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home {
+  margin-top: 15%;
+}
 @media only screen and (max-width: 500px) {
   .home {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 20%;
   }
 }
 .home .intro h2 {
