@@ -4,7 +4,7 @@
 
 .navbar {
     width: 100%;
-    .flex(column, space-between, center);
+    .flex(column, flex-start, center);
     background-color: @nav-bg;
     border-bottom: 1px solid @nav-border;
     margin-bottom: 2%;
@@ -16,19 +16,22 @@
             font-size: 4rem;
             margin: 0 auto;
             color: @header-font-color;
+            padding: 2%;
         }
     }
     
 
     nav {
-        .flex(row, space-evenly, center);
-        width: 100%;
+        // .flex(row, space-evenly, center);
+        width: 60%;
+        margin: 0 20%;
+
         a {
             .flex(row, space-between, center);
             text-decoration: none;
             font-family: @nav-font;
             font-size: 1.75rem;
-            padding: 0px 5%;
+            padding: 2% 5%;
             color: black;
 
         }

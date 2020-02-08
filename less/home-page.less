@@ -1,4 +1,6 @@
 // Home Content
+@import "variables.less";
+@import "mixins.less";
 
 .home {
 
@@ -10,6 +12,10 @@
 
     p {
       padding:0 15px;
+    }
+
+    img {
+      border-radius: 10px;
     }
   
   }
@@ -58,6 +64,7 @@
       }
 
       .btn {
+        .btn-style(@btn-bg-color, @wild-sand);
       }
     }
 

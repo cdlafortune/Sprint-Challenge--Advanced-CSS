@@ -163,7 +163,7 @@ p {
 .navbar {
   width: 100%;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   background-color: #F6F6F6;
@@ -178,13 +178,11 @@ p {
   font-size: 4rem;
   margin: 0 auto;
   color: #23293B;
+  padding: 2%;
 }
 .navbar nav {
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
+  width: 60%;
+  margin: 0 20%;
 }
 .navbar nav a {
   flex-direction: row;
@@ -194,7 +192,7 @@ p {
   text-decoration: none;
   font-family: #454A59;
   font-size: 1.75rem;
-  padding: 0px 5%;
+  padding: 2% 5%;
   color: black;
 }
 footer {
@@ -212,6 +210,9 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  border-radius: 10px;
 }
 .home .space-images {
   display: flex;
@@ -248,6 +249,17 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #22283A;
+  color: #F6F6F6;
+  font-size: 1.75rem;
+  border-radius: 5px;
+  text-align: center;
+  width: 30%;
+  padding: 3%;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
 }
 .home .walk .walk-img {
   width: 46%;
