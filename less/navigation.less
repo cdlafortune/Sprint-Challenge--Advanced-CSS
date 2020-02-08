@@ -5,12 +5,14 @@
 .navbar {
     width: 100%;
     .flex(column, flex-start, center);
+    flex-wrap: nowrap;
     background-color: @nav-bg;
     border-bottom: 1px solid @nav-border;
     margin-bottom: 2%;
 
     .nav-text {
         width: 100%;
+        flex-wrap: nowrap;
         text-align: center;
         h1 {
             font-size: 4rem;
@@ -25,6 +27,15 @@
         // .flex(row, space-evenly, center);
         width: 60%;
         margin: 0 20%;
+        .flex(row, space-between, center);
+        flex-wrap: nowrap;
+        // border: 1px solid red;
+
+        @media @phone {
+            width: 80%;
+            margin: 0 auto;
+            
+        }
 
         a {
             .flex(row, space-between, center);
@@ -33,6 +44,13 @@
             font-size: 1.75rem;
             padding: 2% 5%;
             color: black;
+
+            @media @phone {
+                // border: 1px solid red;
+                .flex(row, space-between, center);
+                flex-wrap: nowrap;
+                padding: 2%;
+            }
 
         }
     }
