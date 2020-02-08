@@ -1,1 +1,36 @@
 // Navigation code here
+@import "variables.less";
+@import "mixins.less";
+
+.navbar {
+    width: 100%;
+    .flex(column, space-between, center);
+    background-color: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+    margin-bottom: 2%;
+
+    .nav-text {
+        width: 100%;
+        text-align: center;
+        h1 {
+            font-size: 4rem;
+            margin: 0 auto;
+            color: @header-font-color;
+        }
+    }
+    
+
+    nav {
+        .flex(row, space-evenly, center);
+        width: 100%;
+        a {
+            .flex(row, space-between, center);
+            text-decoration: none;
+            font-family: @nav-font;
+            font-size: 1.75rem;
+            padding: 0px 5%;
+            color: black;
+
+        }
+    }
+}

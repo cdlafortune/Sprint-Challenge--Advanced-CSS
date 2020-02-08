@@ -1,0 +1,37 @@
+.navbar {
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #F1F1F1;
+  margin-bottom: 2%;
+}
+.navbar .nav-text {
+  width: 100%;
+  text-align: center;
+}
+.navbar .nav-text h1 {
+  font-size: 4rem;
+  margin: 0 auto;
+  color: #23293B;
+}
+.navbar nav {
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.navbar nav a {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  font-family: #454A59;
+  font-size: 1.75rem;
+  padding: 0px 5%;
+  color: black;
+}
